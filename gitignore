@@ -1,0 +1,15 @@
+# R artifacts
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Data 
+data/raw/
+
+# Large outputs
+outputs/*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
