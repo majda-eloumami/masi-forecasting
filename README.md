@@ -173,7 +173,7 @@ masi-forecasting/
 ##  Author
 
 **El Oumami Majda** — Applied Econometrics & Financial Data Analysis  
-Submitted as part of coursework at [your institution], December 2024  
+Submitted as part of coursework at ISEG ULisboa, December 2024  
  Lisbon, Portugal
 
 ---
