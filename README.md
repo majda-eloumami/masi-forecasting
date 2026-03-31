@@ -93,7 +93,7 @@ The MASI is a free float capitalization weighted index covering all listed share
 | **From Low Volatility** | 0.95 | 0.05 |
 | **From High Volatility** | 0.10 | 0.90 |
 
-Both regimes show **high persistence** — once the market enters a state (stable or volatile), it tends to stay there for extended periods. Regime transitions are rare and typically triggered by macroeconomic shocks.
+Both regimes show **high persistence**  once the market enters a state (stable or volatile), it tends to stay there for extended periods. Regime transitions are rare and typically triggered by macroeconomic shocks.
 
 ### Key Findings
 
