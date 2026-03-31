@@ -12,7 +12,7 @@ A time series analysis and forecasting study of the **Moroccan All Shares Index 
 
 ## Objective
 
-Stock market forecasting is hard — prices are noisy, nonlinear, and prone to sudden regime shifts. This project investigates whether a **regime-aware model (Markov Switching)** can outperform a classical **linear model (ARIMA)** on the Moroccan stock market, and what each approach reveals about market dynamics.
+Stock market forecasting is hard prices are noisy, nonlinear, and prone to sudden regime shifts. This project investigates whether a **regime-aware model (Markov Switching)** can outperform a classical **linear model (ARIMA)** on the Moroccan stock market, and what each approach reveals about market dynamics.
 
 ---
 
