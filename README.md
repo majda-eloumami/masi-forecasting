@@ -12,7 +12,7 @@ A time series analysis and forecasting study of the **Moroccan All Shares Index 
 
 ## Objective
 
-Stock market forecasting is hard prices are noisy, nonlinear, and prone to sudden regime shifts. This project investigates whether a **regime-aware model (Markov Switching)** can outperform a classical **linear model (ARIMA)** on the Moroccan stock market, and what each approach reveals about market dynamics.
+Stock market forecasting is hard, prices are noisy, nonlinear, and prone to sudden regime shifts. This project investigates whether a **regime-aware model (Markov Switching)** can outperform a classical **linear model (ARIMA)** on the Moroccan stock market, and what each approach reveals about market dynamics.
 
 ---
 
@@ -21,7 +21,7 @@ Stock market forecasting is hard prices are noisy, nonlinear, and prone to sudde
 | Property | Detail |
 |---|---|
 | **Source** | [Bourse de Casablanca](https://www.casablanca-bourse.com) (official Moroccan stock exchange) |
-| **Index** | MASI — Moroccan All Shares Index |
+| **Index** | MASI : Moroccan All Shares Index |
 | **Coverage** | January 2, 2012 → October 25, 2024 |
 | **Observations** | 3,187 daily trading records |
 | **Features** | Date, Closing Price, Open, High, Low, Daily % Change |
@@ -33,28 +33,28 @@ The MASI is a free float capitalization weighted index covering all listed share
 
 ## Methodology
 
-### Step 1 — Data Preparation
+### Step 1 : Data Preparation
 - Cleaned and formatted raw CSV (date parsing, numeric reformatting, column removal)
 - Converted to `xts` time series object for temporal analysis
 - Applied **first-order differencing** to achieve stationarity
 - Confirmed stationarity via **ADF, KPSS, and Phillips-Perron tests**
 
-### Step 2 — Exploratory Analysis
+### Step 2 : Exploratory Analysis
 - Visual inspection of price trends and return volatility
 - ACF/PACF analysis to identify model order candidates
 - Rolling 30 day volatility plot to detect clustering
 
-### Step 3 — ARIMA Modeling
+### Step 3 : ARIMA Modeling
 - **Auto ARIMA**: automated selection via AIC/BIC → identified ARIMA(1,1,3)
 - **Manual ARIMA(2,1,2)**: alternative specification for comparison
 - Residual diagnostics using Ljung-Box test and ACF of residuals
 
-### Step 4 — Markov Switching Model
+### Step 4 : Markov Switching Model
 - **MS-AR(1) with 2 regimes**: low volatility vs high-volatility market states
 - Estimated via EM algorithm using the `MSwM` package in R
 - Extracted **transition probability matrix**, regime specific coefficients, and smoothed regime probabilities (Kim Smoother)
 
-### Step 5 — Model Comparison
+### Step 5 ) Model Comparison
 - Compared models on MAE and RMSE (on test set)
 - Interpreted regime dynamics and practical implications
 
